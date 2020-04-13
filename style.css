@@ -1,3 +1,19 @@
+body, html{
+ 
+  margin: 0;
+}
+body{
+  /* The image used */
+  background-image: url("bg.jpg");
+
+  /* Full height */
+
+
+  /* Center and scale the image nicely */
+  
+  background-repeat: no-repeat;
+background-size: cover;
+}
 /*preloader*/
 #loader-wrapper {
     position:fixed;
@@ -124,7 +140,7 @@ padding-left: 70px;
 padding-top: 40px;
 }
 form h4{
-    color: lightskyblue;
+    color: darkblue;
 }
 .go-back{
     padding-left: 70px;
@@ -138,4 +154,17 @@ form h4{
     text-align: center;
     left: 50%;
     right: 50%;
+}
+/*carousal*/
+
+#carouselExampleIndicators{
+  width: auto;
+  padding-top: 40px;
+}
+
+#carouselExampleIndicators h1{
+  height: 100px;
+}
+.column{
+margin: 0 auto;
 }

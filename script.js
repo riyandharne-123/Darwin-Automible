@@ -5,5 +5,9 @@ window.addEventListener('load',function(){
   //fade in elements with jquery
   $(document).ready(function(){
     $("#home").fadeIn(2500);
+ 
 
+});
+$(document).ready(function(){
+  $(".column img").show( "slide", {direction: "right" }, 2000 );
 });

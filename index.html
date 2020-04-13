@@ -37,7 +37,7 @@
       <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#menu1">About Us</a>
+      <a class="nav-link" data-toggle="tab" id="about-us" href="#menu1">About Us</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#menu2">Our Services</a>
@@ -47,8 +47,8 @@
   <!-- Tab panes -->
   <div class="tab-content">
     <div id="home" class="container tab-pane active" style="display: none;"><br>
-      <h3 style="text-align: center; color: lightskyblue;">Darwin Automotives</h3>
-      <p style="font-family: Arial, Helvetica, sans-serif; font-style: italic; font-size: larger;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <h3 style="text-align: center; color: blue;">Darwin Automotives</h3>
+      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic; font-size: larger;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, natus. Eius magni labore sunt accusamus deleniti amet quibusdam quas cum nisi quisquam, expedita numquam voluptate maiores
            voluptates corrupti adipisci nobis.
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quaerat cumque repellat ad dolore aliquid architecto aperiam quidem quasi iure vero laborum voluptas in, aliquam modi? Impedit delectus 
@@ -56,42 +56,71 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eveniet veniam soluta laboriosam blanditiis! Corporis provident cumque aliquid esse vitae debitis, ex rerum itaque laudantium eligendi nesciunt 
       nihil placeat illo.
         </p>
-        <div class="images-cars">
-            <img src="Mercedes-Benz.jpg"  class="img-thumbnail"/>
+      <!--carousal-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+           <h1 style="text-align: center; color: white;">Engine Repair</h1>
+          </div>
+          <div class="carousel-item">
+            <h1 style="text-align: center; color: white;">Annual Servicing</h1>
+          </div>
+          <div class="carousel-item">
+            <h1 style="text-align: center; color: white;" >Second Hand Dealership</h1>
+          </div>
         </div>
-      <h2 style="text-align: center; color: lightskyblue;">Mercedes Benz</h2>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- ----------------------------------------- -->
     </div>
     <div id="menu1" class="container tab-pane fade"><br>
-      <h3 style="text-align: center; color: lightskyblue;">About Us</h3>
-      <p style="font-family: Arial, Helvetica, sans-serif; font-style: italic; font-size: larger;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem delectus provident neque? Asperiores, architecto aliquid dolorum sit,
+      <h3 style="text-align: center; color: blue;">About Us</h3>
+      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-style: italic; font-size: larger;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem delectus provident neque? Asperiores, architecto aliquid dolorum sit,
            omnis exercitationem, officia quis dolor odit maiores molestiae optio in. Omnis, similique rem?</p>
-           <div class="images-cars">
-            <img src="rolls-royce.jpg"  class="img-thumbnail"/>
-        </div>
-      <h2 style="text-align: center; color: lightskyblue;">Rolls Royce</h2>
-      <div class="images-cars">
-        <img src="lamborgini.jpg"  class="img-thumbnail"/>
-    </div>
-  <h2 style="text-align: center; color: lightskyblue;">Lamborgini</h2>
+           <div class="row">
+<div class="column">
+<img src="lamborgini.jpg" class="img-thumbnail" style="display: none;">
+<h3 style="color: blue; font-family: Arial, Helvetica, sans-serif; text-align: center;">Lamborgini</h3>
+</div>
+<div class="column">
+  <img src="Mercedes-Benz.jpg" class="img-thumbnail" style="display: none;">
+  <h3 style="color: blue; font-family: Arial, Helvetica, sans-serif; text-align: center;">Mercedes Benz</h3>
+  </div>
+           </div>
+          
     </div>
     <div id="menu2" class="container tab-pane fade"><br>
-      <h3 style="text-align: center; color: lightskyblue;">Our Services</h3>
-      <p style="text-align: center; color: black; font-family: Arial, Helvetica, sans-serif; font-size: larger;">
+      <h3 style="text-align: center; color: blue;">Our Services</h3>
+      <div class="row">
+        <div class="column">
+        <img src="rolls-royce.jpg" class="img-thumbnail" style="display: none;">
+        <h3 style="color: blue; font-family: Arial, Helvetica, sans-serif; text-align: center;">rolls royce</h3>
+        </div>
+        <div class="column">
+          <img src="mercedes.jpg" class="img-thumbnail" style="display: none;">
+          <h3 style="color: blue; font-family: Arial, Helvetica, sans-serif; text-align: center;">Mercedes Benz</h3>
+          </div>
+                   </div>
+                  
+      <p style="text-align: center; color: black; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: larger;">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tempora expedita dicta neque modi distinctio perspiciatis facere, eveniet quos incidunt vitae porro obcaecati corporis ratione assumenda,
  laboriosam quibusdam iusto doloribus!
  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quia, recusandae aut maxime aliquam beatae quidem quo eum et quaerat quos mollitia 
  expedita ea omnis cumque architecto reiciendis est? Labore?
       </p>
-      <div class="images-cars">
-        <img src="Rolls-Royce646.jpg"  class="img-thumbnail"/>
-    </div>
-  <h2 style="text-align: center; color: lightskyblue;">Rolls Royce</h2>
-  <div class="images-cars">
-    <img src="mercedes.jpg"  class="img-thumbnail"/>
-</div>
-<h2 style="text-align: center; color: lightskyblue;">Mercedes Benz</h2>
-    </div>
-   
+    
     </div>
   </div>
 
